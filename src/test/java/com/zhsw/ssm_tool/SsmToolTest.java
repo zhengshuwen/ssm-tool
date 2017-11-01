@@ -26,17 +26,17 @@ public class SsmToolTest {
 		String springXml="";
 		String springMVCXml="";
 		SsmTool tool=new SsmTool(databaseBean, fileDir,packageDir,dbTableName);;
-//		try {
-//			tool.createPOJOClass("UserBean");
+		try {
+			tool.createPOJOClass("UserBean1");
 //			tool.createMapperXml("UserMapper");
 //			tool.createServiceImplClass("UserServiceImpl");
 //			tool.createControllerClass("UserController");
 //			tool.createJUnitBaseClassOfSpring(junitPackageDir, springXml, springMVCXml);
 //			tool.createJUnitControllerClass("UserControllerJUnit");
 //			tool.createJUnitMethodsClass("UserMothodsJUnit");
-//		} finally {
-//			tool.colse();
-//		}
+		} finally {
+			tool.colse();
+		}
 		
 		
 	}
