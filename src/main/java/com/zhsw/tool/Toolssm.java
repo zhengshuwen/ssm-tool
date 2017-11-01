@@ -6,7 +6,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.sql.SQLException;
 
-public class SsmTool {
+public class Toolssm {
 //	tool.displayMetaData( tool.getMetaDataFromTable(tableName));
 //	tool.metaDataToDaoClass("com.xss.user",fileUrl,"UserEntity", tool.getMetaDataFromTable(tableName));
 //	tool.metaDataToXML("com.xss.user.UserMapper","com.xss.user.UserEntity",fileUrl, "UserMapper", tool.getMetaDataFromTable(tableName));
@@ -40,7 +40,7 @@ public class SsmTool {
 	 * @throws SQLException 
 	 * @throws ClassNotFoundException 
 	 * */
-	public SsmTool(DatabaseBean databaseBean,String fileDir,String packageDir,String dbTableName) throws ClassNotFoundException, SQLException{
+	public Toolssm(DatabaseBean databaseBean,String fileDir,String packageDir,String dbTableName) throws ClassNotFoundException, SQLException{
 		toolService=new SsmToolService(databaseBean);
 		this.fileDir=fileDir;
 		this.packageDir=packageDir;

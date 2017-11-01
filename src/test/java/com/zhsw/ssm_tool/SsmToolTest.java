@@ -4,7 +4,7 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 import com.zhsw.tool.DatabaseBean;
-import com.zhsw.tool.SsmTool;
+import com.zhsw.tool.Toolssm;
 
 public class SsmToolTest {
 
@@ -25,7 +25,7 @@ public class SsmToolTest {
 		String junitPackageDir="com.zhsw.ss_tool.junit";
 		String springXml="";
 		String springMVCXml="";
-		SsmTool tool=new SsmTool(databaseBean, fileDir,packageDir,dbTableName);;
+		Toolssm tool=new Toolssm(databaseBean, fileDir,packageDir,dbTableName);;
 		try {
 			tool.createPOJOClass("UserBean1");
 //			tool.createMapperXml("UserMapper");
